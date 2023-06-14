@@ -1,6 +1,7 @@
 @import url(style/header.css);
- 
-:root{
+@import url(style/banner.css);
+
+ :root{
 
     --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
