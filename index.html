@@ -51,10 +51,8 @@
     <p class="banner_texto"> estante foda com muito conhecimento</p>
     <input type="search" class="banner_pesquisa" placeholder="qual sera o livro?">
   </section>
-</body>
-</html>
 
-<section>
+<section class="swiper">
     <h2 class="carrossel_titulo">novo gozo</h2>
 
     <div class="swiper">
@@ -77,8 +75,14 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <script>
-    const swiper new swiper(swiper)
-    spacebetween: 10,
+    const swiper = new swiper('.swiper',{
+        spacebetween: 10,
     slidesperview: 3,
-    pagination: 
-</script>
+    pagination: {
+    el: '.swiper-pagination',    
+    type: 'bullets',    
+    }
+    })   
+    </script>
+</body>
+</html>
