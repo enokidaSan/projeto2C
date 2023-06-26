@@ -3,12 +3,12 @@
     color: var(--laranja);
     text-align: center;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 18px;
     font-weight: 700;
     padding: 1em 0 0.5em 0;
 }
 .swiper-slide img{
-    width: 100%;
+    width: 10%;
 }
 .swiper-button-prev,
 .swipper-button-next{

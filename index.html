@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    
     <link rel="stylesheet" href="style.css">
     <title>alurabooks</title>
 </head>
@@ -53,7 +55,7 @@
   </section>
 
 <section class="swiper">
-    <h2 class="carrossel_titulo">novo gozo</h2>
+    <h2 class="carrossel_titulo">novo lançamentos</h2>
 
     <div class="swiper">
     <div class="swiper-pagination"></div>
@@ -73,16 +75,15 @@
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
 <script>
-    const swiper = new swiper('.swiper',{
+    const swiper = new Swiper('.swiper',{
         spacebetween: 10,
-    slidesperview: 3,
-    pagination: {
-    el: '.swiper-pagination',    
-    type: 'bullets',    
+        slidesperview: 3,
+        pagination: {
+        el: '.swiper-pagination',    
+        type: '.bullets',    
     }
-    })   
+    });   
     </script>
 </body>
 </html>
