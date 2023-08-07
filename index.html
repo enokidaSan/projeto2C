@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
     <title>alurabooks</title>
 </head>
+
 <body>
   <header class="cabecalho">
    <div class="container">
@@ -37,7 +38,6 @@
       <li class="lista-menu_item">
           <a href="#" class="lista-menu_link">desing & UX</a>
       </li>
-    
     </ul>
   
     <img src="img/Logo.svg" alt="logo"class="container__menu-hungurger">
@@ -46,7 +46,7 @@
     <a href="#"><img src="img/Favoritos.svg" alt="legal" class="container_image"></a>
     <a href="#"><img src="img/Compras.svg" alt="carrinho de putas" class="container_image"></a>
     <a href="#"><img src="img/Usuario.svg" alt="putinha da loja" class="container_image"></a>
-</div>
+   </div>
   </header>
   <section class="banner">
     <h2 class="banner_titulo">you now how to start?</h2>
@@ -82,7 +82,7 @@
         pagination: {
         el: '.swiper-pagination',    
         type: '.bullets',    
-    }
+    },
     });   
     </script>
     
@@ -98,11 +98,71 @@
 
     <div class="card_botões">
         <ul class="botões">
-            <li class="botão_item"> <img src="/img/Favoritos.svg" alt="favoritar"></li>
-            <li class="botão_item"> <img src="/img/Compras.svg" alt="coloca no carrinho"></li>
+            <li class="botão_item"> <img src="img/Favoritos.svg" alt="favoritar"></li>
+            <li class="botão_item"> <img src="img/Compras.svg" alt="coloca no carrinho"></li>
         </ul>
         <a href="#" class="botões_ancora">saiba mais</a>
+</div>
 
+<section class="carrossel">
+    <h2 class="carrossel_titulo">mais vendidos</h2>
+
+    <div class="swiper">
+    <div class="swiper-pagination"></div>
+     
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro legal"></div>
+        <div class="swiper-slide"><img src="img/Liderança.svg" alt="livro do hitler"></div>
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="codigo foda"></div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="front-end"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="portugal"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="deficientes"></div>
     </div>
- </body>
+    
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    const swiper1 = new Swiper('.swiper',{
+        spacebetween: 10,
+        slidesperview: 3,
+        pagination: {
+        el: '.swiper-pagination',    
+        type: '.bullets',    
+    },
+    });   
+    </script>
+    
+<div class="card">
+    <div class="card_descrição">
+        <div class="descrição"></div>
+        <img src="estrelinhas" src="img/Estrelinhas.svg" alt="cinco estrelas">
+            <h3 class="descrição_titulo">Autora DO Mês</h3>
+            <h2 class="descrição_titulo-livro">Juliana Gay</h2>
+            <p class="descrição_texto">Analista de futSal</p>
+        </div>
+        <img src="img/Juliana Agarikov.svg" class="descrição_imagem">
+    </div>
+
+    <div class="card_botões">
+        <ul class="botões">
+            <li class="botão_item"> <img src="img/Favoritos.svg" alt="favoritar"></li>
+            <li class="botão_item"> <img src="img/Compras.svg" alt="coloca no carrinho"></li>
+        </ul>
+        <a href="#" class="botões_ancora">saiba mais</a>
+</div>
+ 
+
+
+
+
+
+
+
+
+
+</body>
 </html>
